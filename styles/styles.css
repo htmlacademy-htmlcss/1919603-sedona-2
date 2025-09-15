@@ -42,9 +42,9 @@ img {
   max-width: 100%;
 }
 
-.main {
+/* .main {
   flex-grow: 1;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -62,8 +62,6 @@ img {
 .bold {
   font-weight: 700;
 }
-
-/* button */
 
 .button {
   display: block;
@@ -188,8 +186,6 @@ img {
   opacity: 0.1;
 }
 
-/* title */
-
 .title {
   color: #000000;
   text-transform: uppercase;
@@ -235,8 +231,6 @@ img {
   margin-bottom: 32px;
   padding: 0;
 }
-
-/* text */
 
 .section-header .text {
   font-size: 22px;
