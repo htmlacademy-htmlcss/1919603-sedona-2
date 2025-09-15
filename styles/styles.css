@@ -40,7 +40,6 @@ body {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 .main {
@@ -220,6 +219,7 @@ img {
 }
 
 .advantages__item-img {
+  display: block;
   background-color: #33484c;
 }
 
@@ -613,6 +613,7 @@ img {
 }
 
 .main__promo-img {
+  display: block;
   margin: 0 auto;
   padding: 51px 0 25px 0;
 }
@@ -1231,6 +1232,7 @@ img {
 }
 
 .card__image {
+  display: block;
   background-color: #33484c;
   margin-bottom: 16px;
 }
