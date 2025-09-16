@@ -278,11 +278,30 @@ img {
 }
 
 .basic-list__link {
-
   display: block;
   padding: 20px 16px;
   color: #000000;
   text-decoration: none;
+}
+
+.basic-list__link:hover {
+  color: #756157;
+}
+
+.basic-list__link:focus-visible {
+  outline: none;
+  color: #756157;
+}
+
+@supports not selector(:focus-visible) {
+  .basic-list__link:focus {
+    outline: none;
+    color: #756157;
+  }
+}
+
+.basic-list__link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .basic-list__link--active {
@@ -569,18 +588,31 @@ img {
   text-decoration: none;
   font-size: 10px;
   line-height: 100%;
+  color: #000000;
 }
 
-.user-list__link--loop {
-  background-image: url("../images/general/header/header-user-list-icon-loop.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.user-list__link:hover {
+  color: #756157;
+}
+
+.user-list__link:focus-visible {
+  color: #756157;
+}
+
+@supports not selector(:focus-visible) {
+  .user-list__link:focus {
+    color: #756157;
+  }
+}
+
+.user-list__link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .user-list__link--heart {
-  background-image: url("../images/general/header/header-user-list-icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-list__link-counter {
@@ -604,6 +636,7 @@ img {
   margin: 0;
   padding: 8px 34px;
   min-width: 92px;
+  max-width: 132px;
 }
 
 .main__promo-img {
